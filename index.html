@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialBook</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4560e91a8c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--------------------------navbar--------------------------------->
+    <nav class="navBar">
+        <div class="navBar__left">
+            <img src="./Socialbook_img/logo.png" class="navBar__logo">
+            <ul>
+                <li class="navBar__icons"><img class="navBar__iconsImg" src="Socialbook_img/notification.png" alt="notification-img"></li>
+                <li class="navBar__icons"><img class="navBar__iconsImg" src="Socialbook_img/inbox.png" alt="inbox-img"></li>
+                <li class="navBar__icons"><img class="navBar__iconsImg" src="Socialbook_img/video.png" alt="video-img"></li>
+            </ul>
+        </div>
+        <div class="navBar__right">
+            <div class="navBar__search">
+                <img src="./Socialbook_img/search.png" alt="search-img">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="navBar__userIcon online" onclick="settingsMenuToggle()">
+                <img src="./Socialbook_img/profile-pic.png" alt="profile-img">
+            </div>
+        </div>
+        <!---------------------settings-menu-------------------------->
+        <div class="navBar__settings-Menu">
+            <div id="darkBtn">
+                <span></span>
+            </div>
+            <div class="navBar__settings-Menu--innerSettings">
+                <div class="container-center__userProfile">
+                    <img src="./Socialbook_img/profile-pic.png" alt="profile-user-img">
+                    <div>
+                        <p>Aman Gautam</p>
+                        <a href="#">See Your Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="container-center__userProfile">
+                    <img src="./Socialbook_img/feedback.png" alt="feedback-img">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="navBar__settings-links">
+                    <img src="./Socialbook_img/setting.png" alt="settings-img" class="navBar__settings-icon">
+                    <a href="#">Settings & Privacy <img src="./Socialbook_img/arrow.png" width="10px"></a>
+                </div>
+                <div class="navBar__settings-links">
+                    <img src="./Socialbook_img/help.png" alt="help-img" class="navBar__settings-icon">
+                    <a href="#">Help & Support <img src="./Socialbook_img/arrow.png" width="10px"></a>
+                </div>
+                <div class="navBar__settings-links">
+                    <img src="./Socialbook_img/display.png" alt="display-img" class="navBar__settings-icon">
+                    <a href="#">Display & Accessibility <img src="./Socialbook_img/arrow.png" width="10px"></a>
+                </div>
+                <div class="navBar__settings-links">
+                    <img src="./Socialbook_img/logout.png" alt="logout-img" class="navBar__settings-icon">
+                    <a href="#">Logout <img src="./Socialbook_img/arrow.png" width="10px"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!---------------------------main-content-------------------------->
+    <main class="container">
+        <!---------------------left-content----------------------------->
+        <aside class="container-left">
+            <div class="container-left__links">
+                <a href="#" class="container-left__hyperlinks"><img src="./Socialbook_img/news.png" alt="news-img">Latest News</a>
+                <a href="#" class="container-left__hyperlinks"><img src="./Socialbook_img/friends.png" alt="friends-img">Friends</a>
+                <a href="#" class="container-left__hyperlinks"><img src="./Socialbook_img/group.png" alt="groups-img">Groups</a>
+                <a href="#" class="container-left__hyperlinks"><img src="./Socialbook_img/marketplace.png" alt="marketplace-img">Marketplace</a>
+                <a href="#" class="container-left__hyperlinks"><img src="./Socialbook_img/watch.png" alt="watch-img">Watch</a>
+                <a href="#" class="container-left__hyperlinks">See More</a>
+            </div>
+            <div class="container-left__links2">
+                <p class="container-left__para">Your Shortcuts</p>
+                <a href="#" class="container-left__shortlinks"><img src="./Socialbook_img/shortcut-1.png" alt="Web Developer-img">Web Developers</a>
+                <a href="#" class="container-left__shortlinks"><img src="./Socialbook_img/shortcut-2.png" alt="Web Design Course-img">Web Design Course</a>
+                <a href="#" class="container-left__shortlinks"><img src="./Socialbook_img/shortcut-3.png" alt="Full Stack Development-img">Full Stack Development</a>
+                <a href="#" class="container-left__shortlinks"><img src="./Socialbook_img/shortcut-4.png" alt="Website Experts-img">Website Experts</a>
+            </div>
+        </aside>
+        <!----------------------center-content-------------------------->
+        <div class="container-center">
+            <div class="container-center__storyGallery">
+                <div class="container-center__story story1">
+                    <img src="./Socialbook_img/upload.png" alt="upload-img">
+                    <p>Post Story</p>
+                </div>
+                <div class="container-center__story story2">
+                    <img src="./Socialbook_img/member-1.png" alt="member-img">
+                    <p>Mahie</p>
+                </div>
+                <div class="container-center__story story3">
+                    <img src="./Socialbook_img/member-2.png" alt="member-img">
+                    <p>Akash</p>
+                </div>
+                <div class="container-center__story story4">
+                    <img src="./Socialbook_img/member-3.png" alt="member-img">
+                    <p>Amrita</p>
+                </div>
+                <div class="container-center__story story5">
+                    <img src="./Socialbook_img/member-4.png" alt="member-img">
+                    <p>Mohit</p>
+                </div>
+            </div>
+            <div class="container-center__writePost">
+                <div class="container-center__userProfile">
+                    <img src="./Socialbook_img/profile-pic.png" alt="profile-user-img">
+                    <div>
+                        <p>Aman Gautam</p>
+                        <small>Public <i class="fas fa-caret-down"></i></small>
+                    </div>
+                </div>
+                <div class="container-center__postInput">
+                    <textarea rows="3" placeholder="What's on your mind, Aman?"></textarea>
+                    <div class="container-center__postLinks">
+                        <a href="#"><img src="./Socialbook_img/live-video.png" alt="live-video-img">Live Video</a>
+                        <a href="#"><img src="./Socialbook_img/photo.png" alt="photo-img">Photo/Video</a>
+                        <a href="#"><img src="./Socialbook_img/feeling.png" alt="feeling-img">Feeling/Activity</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container-center__postContainer">
+                <div class="container-center__postRow">
+                    <div class="container-center__userProfile">
+                        <img src="./Socialbook_img/profile-pic.png" alt="profile-user-img">
+                        <div>
+                            <p>Aman Gautam</p>
+                            <span>July 14 2021, 18:30 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>                
+                <p class="container-center__paraPost">Follow me on <a href="#">#instagram</a> & <a href="#">#YouTube</a> <span>@Aman Gautam</span> to see my development post.</p>
+                <img src="./Socialbook_img/feed-image-1.png" class="container-center__imgPost" alt="feed-img">
+                <div class="container-center__postRow">
+                    <div class="container-center__postRow__activity-icons">
+                        <div><img src="./Socialbook_img/like-blue.png" class="container-center__postRow--img" alt="like-blue-img">120</div>
+                        <div><img src="./Socialbook_img/comments.png" class="container-center__postRow--img" alt="comments-img">45</div>
+                        <div><img src="./Socialbook_img/share.png" class="container-center__postRow--img" alt="share-img">20</div>
+                    </div>
+                    <div class="container-center__postRow__profile-icons">
+                        <img src="./Socialbook_img/profile-pic.png" alt="profile-img"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="container-center__postContainer">
+                <div class="container-center__postRow">
+                    <div class="container-center__userProfile">
+                        <img src="./Socialbook_img/profile-pic.png" alt="profile-user-img">
+                        <div>
+                            <p>Aman Gautam</p>
+                            <span>July 14 2021, 18:30 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>                
+                <p class="container-center__paraPost">Like and Share this video with friends, tag  <span>@Aman Gautam</span> facebook page on your post. Ask your doubts in the comments <a href="#">#instagram</a> & <a href="#">#YouTube</a></p>
+                <img src="./Socialbook_img/feed-image-2.png" class="container-center__imgPost" alt="feed-img">
+                <div class="container-center__postRow">
+                    <div class="container-center__postRow__activity-icons">
+                        <div><img src="./Socialbook_img/like.png" class="container-center__postRow--img" alt="like-img">120</div>
+                        <div><img src="./Socialbook_img/comments.png" class="container-center__postRow--img" alt="comments-img">45</div>
+                        <div><img src="./Socialbook_img/share.png" class="container-center__postRow--img" alt="share-img">20</div>
+                    </div>
+                    <div class="container-center__postRow__profile-icons">
+                        <img src="./Socialbook_img/profile-pic.png" alt="profile-img"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="container-center__postContainer">
+                <div class="container-center__postRow">
+                    <div class="container-center__userProfile">
+                        <img src="./Socialbook_img/profile-pic.png" alt="profile-user-img">
+                        <div>
+                            <p>Aman Gautam</p>
+                            <span>July 14 2021, 18:30 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>                
+                <p class="container-center__paraPost">Like and Share this video with friends, tag  <span>@Aman Gautam</span> facebook page on your post. Ask your doubts in the comments <a href="#">#instagram</a> & <a href="#">#YouTube</a></p>
+                <img src="./Socialbook_img/feed-image-3.png" class="container-center__imgPost" alt="feed-img">
+                <div class="container-center__postRow">
+                    <div class="container-center__postRow__activity-icons">
+                        <div><img src="./Socialbook_img/like.png" class="container-center__postRow--img" alt="like-img">120</div>
+                        <div><img src="./Socialbook_img/comments.png" class="container-center__postRow--img" alt="comments-img">45</div>
+                        <div><img src="./Socialbook_img/share.png" class="container-center__postRow--img" alt="share-img">20</div>
+                    </div>
+                    <div class="container-center__postRow__profile-icons">
+                        <img src="./Socialbook_img/profile-pic.png" alt="profile-img"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="container-center__postContainer">
+                <div class="container-center__postRow">
+                    <div class="container-center__userProfile">
+                        <img src="./Socialbook_img/profile-pic.png" alt="profile-user-img">
+                        <div>
+                            <p>Aman Gautam</p>
+                            <span>July 14 2021, 18:30 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>                
+                <p class="container-center__paraPost">Like and Share this video with friends, tag  <span>@Aman Gautam</span> facebook page on your post. Ask your doubts in the comments <a href="#">#instagram</a> & <a href="#">#YouTube</a></p>
+                <img src="./Socialbook_img/feed-image-4.png" class="container-center__imgPost" alt="feed-img">
+                <div class="container-center__postRow">
+                    <div class="container-center__postRow__activity-icons">
+                        <div><img src="./Socialbook_img/like.png" class="container-center__postRow--img" alt="like-img">120</div>
+                        <div><img src="./Socialbook_img/comments.png" class="container-center__postRow--img" alt="comments-img">45</div>
+                        <div><img src="./Socialbook_img/share.png" class="container-center__postRow--img" alt="share-img">20</div>
+                    </div>
+                    <div class="container-center__postRow__profile-icons">
+                        <img src="./Socialbook_img/profile-pic.png" alt="profile-img"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="container-center__postContainer">
+                <div class="container-center__postRow">
+                    <div class="container-center__userProfile">
+                        <img src="./Socialbook_img/profile-pic.png" alt="profile-user-img">
+                        <div>
+                            <p>Aman Gautam</p>
+                            <span>July 14 2021, 18:30 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>                
+                <p class="container-center__paraPost">Like and Share this video with friends, tag  <span>@Aman Gautam</span> facebook page on your post. Ask your doubts in the comments <a href="#">#instagram</a> & <a href="#">#YouTube</a></p>
+                <img src="./Socialbook_img/feed-image-5.png" class="container-center__imgPost" alt="feed-img">
+                <div class="container-center__postRow">
+                    <div class="container-center__postRow__activity-icons">
+                        <div><img src="./Socialbook_img/like.png" class="container-center__postRow--img" alt="like-img">120</div>
+                        <div><img src="./Socialbook_img/comments.png" class="container-center__postRow--img" alt="comments-img">45</div>
+                        <div><img src="./Socialbook_img/share.png" class="container-center__postRow--img" alt="share-img">20</div>
+                    </div>
+                    <div class="container-center__postRow__profile-icons">
+                        <img src="./Socialbook_img/profile-pic.png" alt="profile-img"><i class="fas fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="container-center__btn">Load More</button>
+            <div class="container-footer">
+                <p>Copyright 2021 - Aman Gautam</p>
+            </div>
+        </div>
+        <!-----------------------right-content-------------------------->
+        <aside class="container-right">
+            <div class="container-right__title">
+                <h4 class="container-right__header">Events</h4>
+                <a href="#" class="container-right__hyperlink">See All</a>
+            </div>
+            <div class="container-right__content">
+                <div class="container-right__content--leftEvent">
+                    <h3>14</h3>
+                    <span>July</span>
+                </div>
+                <div class="container-right__content--rightEvent">
+                    <h4>Social Media</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Bilaspur Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="container-right__content">
+                <div class="container-right__content--leftEvent">
+                    <h3>13</h3>
+                    <span>July</span>
+                </div>
+                <div class="container-right__content--rightEvent">
+                    <h4>Mobile Marketing</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Bilaspur Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="container-right__title">
+                <h4 class="container-right__header">Advertisement</h4>
+                <a href="#" class="container-right__hyperlink">Close</a>
+            </div>
+            <img src="./Socialbook_img/advertisement.png" class="container-right__ads" alt="ad-img">
+            <div class="container-right__title">
+                <h4 class="container-right__header">Conversation</h4>
+                <a href="#" class="container-right__hyperlink">Hide Chat</a>
+            </div>
+            <div class="container-right__onlineList">
+                <div class="online">
+                    <img src="./Socialbook_img/member-1.png" alt="Mahie-img" class="onlineImg">
+                </div>
+                <p>Mahie</p>
+            </div>
+            <div class="container-right__onlineList">
+                <div class="online">
+                    <img src="./Socialbook_img/member-2.png" alt="Akash-img" class="onlineImg">
+                </div>
+                <p>Akash</p>
+            </div>
+            <div class="container-right__onlineList">
+                <div class="online">
+                    <img src="./Socialbook_img/member-3.png" alt="Amrita-img" class="onlineImg">
+                </div>
+                <p>Amrita</p>
+            </div>
+        </aside>        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
